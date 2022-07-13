@@ -1,0 +1,93 @@
+/* HTML */
+body {
+  background-color: hsl(30, 38%, 92%);
+  font-family: "Montserrat", sans-serif;
+  text-align: left;
+}
+
+h1 {
+  font-family: "Fraunces", serif;
+  margin: 0;
+}
+
+p {
+  color: #8f8f8f;
+  font-size: 14px;
+  margin: 0;
+}
+
+button {
+  background-color: hsl(158, 36%, 37%);
+  border: none;
+  border-radius: 10px;
+  color: hsl(0, 0%, 100%);
+  padding: 5% 30%;
+}
+
+button:hover {
+  background-color: #064635;
+}
+
+/* CONTENT, from top to bottom */
+
+.container {
+  padding: 5% 10%;
+}
+
+.heading {
+  color: hsl(212, 21%, 14%);
+  padding-top: 7%;
+}
+
+.description {
+  padding: 7% 0;
+}
+
+.price {
+  color: hsl(158, 36%, 37%);
+}
+
+.discount {
+  position: relative;
+  bottom: 35px;
+  left: 60%;
+  text-decoration: line-through;
+}
+
+.left {
+  background-image: url("../images/image-product-desktop.jpg");
+  background-size: cover;
+  border-radius: 10px 0 0 10px;
+}
+
+.right {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 0 10px 10px 0;
+  height: 60%;
+  padding: 5%;
+}
+
+.footer{
+  color: #8f8f8f;
+  text-align: center;
+}
+
+@media (max-width: 500px) {
+  .left {
+    background-image: url("../images/image-product-mobile.jpg");
+    background-size: cover;
+    border-radius: 10px 10px 0 0;
+    height: 300px;
+  }
+
+  .right {
+    border-radius: 0 0 10px 10px;
+    height: 60%;
+    padding: 5%;
+  }
+
+  .discount{
+    bottom: 30px;
+    left: 40%;
+  }
+}
